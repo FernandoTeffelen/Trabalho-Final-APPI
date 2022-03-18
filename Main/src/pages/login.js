@@ -18,7 +18,7 @@ const App = () => {
         secureTextEntry={true}
         placeholder="Digite sua senha"
       />
-
+      
       <TouchableOpacity
         style={styles.botao}
         onPress={ () => { this.props.navigation.navigate('Home') } }
