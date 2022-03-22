@@ -1,6 +1,6 @@
 import React from 'react';
 import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
- 
+
 const App = () => {
   return (
     <View style={styles.container}>

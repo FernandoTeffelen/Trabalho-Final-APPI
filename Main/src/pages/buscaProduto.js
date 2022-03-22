@@ -2,6 +2,9 @@ import React from 'react';
 import { View, Appbar, Text, FAB, Surface, Image, Button, ScrollView, TextInput, StyleSheet, AppRegistry } from 'react-native';
 import Icon from 'react-native-vector-icons/Fontisto'
 import cadeira from '../../assets/img/cadeira.png';
+import processador1 from '../../assets/img/processador1.png';
+import fone from '../../assets/img/fone.png';
+import pc from '../../assets/img/pc.png';
 
 const App = () => {
   return (
@@ -19,61 +22,30 @@ const App = () => {
             top: -23          
           }}/>
         </View>
-        
 
-        <View style={styles.images}>
-        </View>
+
 
         <View style={styles.galeria}>
-          <Image style={styles.cadeiraImg}
-            source = {require ('../../assets/img/cadeira.png')}
-          />
+            <Image source={cadeira} style={styles.imgGaleria}/>
+
+            <Image source={processador1} style={styles.imgGaleria}/>
         </View>
+        <Text style={styles.description}> aaaaaa </Text>
+        <Text style={styles.description}> aaaaaa </Text>
 
+        <View style={styles.galeria}>
+            <Image source={fone} style={styles.imgGaleria}/>
 
-        <Text style={{
-          textAlign: 'center',
-          fontSize: 25,
-          marginBottom: 5
-        }}> Your name </Text>
-
-
-        <View style={{
-          width: '100%',
-          height: 80,
-        }}>
-          <Text style={{ marginLeft: 20 }}> 
-            __________________________________________________
-          </Text>
-
-          <Icon name="messenger" size={30} color='#000' style={{
-            marginTop: 30,
-            marginLeft: 90,         
-          }}/>
-          <Icon name="commenting" size={30} color='#000' style={{
-            bottom: 28,
-            left: 250,
-          }}/>
-
-          <Text style={{ marginLeft: 20 }}> 
-          __________________________________________________
-          </Text>
+            <Image source={pc} style={styles.imgGaleria}/>
         </View>
+        <Text style={styles.description}> aaaaaa </Text>
+        <Text style={styles.description}> aaaaaa </Text>
 
-
-        <View style={styles.meio}>
-          <Text style={{marginBottom: 10}}>
-          Your base info 1
-          </Text>
-          <Text>
-          Your base info 2
-          </Text>
-        </View>
 
 
         <View style={styles.footer}>
-          <Text style={styles.textFooter}>
-            ABOUT        PHOTOS        FRIENDS
+          <Text style={styles.textFooter}> 
+            Copyright © 2022 - Todos os direitos reservados a TechForce. 
           </Text>
         </View>
       </View>
@@ -90,38 +62,32 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 55,
   },
-  images: {
-    backgroundColor: '#D5E1FF',
-    width: '100%',
-    height: 150,
-  },
   galeria: {
-    backgroundColor: '#BCD2EE',
-    width: 150,
-    height: 150,
-    marginLeft: 105,
-    bottom: 50,
-    borderColor: '#fff',
-    borderWidth: 2,
+    padding: 7,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flexDirection: 'row',
+    flex: 1,
   },
-  cadeiraImg: {
-    width: 150,
-    height: 150,
+  imgGaleria: {
+    width: 155,
+    height: 155,
+    backgroundColor: 'blue'
   },
-  meio: {
-    marginLeft: 50,
-    marginBottom: 30,
-    marginTop: 50,
-    fontSize: 15,
+  description: {
+    color: '#000',
+    fontSize: 17.5,
+    paddingLeft: '5%',
   },
   footer: {
-    backgroundColor: '#DCDCDC',
+    backgroundColor: '#4461A2',
     width: '100%',
     height: 80,
   },
   textFooter: {
+    fontSize: 12,
     textAlign: 'center',
+    alignItems: 'center',
     marginTop: 30,
-    fontSize: 20,
   }
 })
