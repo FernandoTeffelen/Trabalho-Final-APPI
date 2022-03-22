@@ -12,8 +12,6 @@ const App = () => {
       <Image style={styles.mouseImg}
             source = {require ('../../assets/img/mouse.jpg')}
           />
-          <Text>sssssssssssssssssss</Text>
-          <Text>sssssssssssssssssss</Text>
     </View>
     </ScrollView>
   );
