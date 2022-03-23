@@ -7,14 +7,11 @@ const App = () => {
   return (
     <ScrollView>
     <View>
-      <TouchableOpacity style={styles.bar}>
-      <Text style={styles.searchTxt}>
-           Pesquisar
-          </Text>
-          <Icon name="search1" size={20} color='#FFCE29' style={styles.search}/>
-        </TouchableOpacity>
+      <TextInput style={styles.bar} placeholder="pesquisar">
+          <Icon name="search1" size={20} color='white' style={styles.search}/>
+        </TextInput>
         <View style={styles.spaceBack}>
-        <Icon name="arrow-left-l" size={25} color='#FFF' style={styles.back}/>
+        <Icon name="back" size={25} color='#FFF' style={styles.back}/>
         </View>
       </View>
     <View style={styles.container}>
@@ -32,7 +29,7 @@ const App = () => {
         style={styles.botao}
         onPress={ () => { this.props.navigation.navigate('Home') } }
         >
-          <Text style={styles.gabineteTxt}>Comprar</Text>
+          <Text style={styles.botaoTxt}>Comprar</Text>
       </TouchableOpacity>
     </View>
     </ScrollView>
@@ -44,56 +41,57 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#004c8b',
+    backgroundColor: '#b0c4de',
     width: '100%',
-    height: '90%',
+    height: '100%',
   },
   bar: {
-    backgroundColor: '#191970',
-    width: 400,
-    height: 50,
-  },
-  searchTxt: {
-    color: '#FFF',
-    marginLeft: 10,
-    marginTop: 5,
+    width: 412,
+    height: 40,
+    backgroundColor: '#008080',
   },
   search: {
-    textAlign: 'right',
-    marginRight: 10,
-    bottom: 20,
+    color: 'white',
   },
   spaceBack: {
-    backgroundColor: '#004c8b',
+    backgroundColor: '#b0c4de',
     width: 420,
     height: 40,
   },
   back: {
-    backgroundColor: 'orange',
+    backgroundColor: '#008080',
     width: 30,
     height: 30,
     left: 370,
     borderRadius: 5,
-    top: 5,
+    top: 10,
   },
   titulo: {
-    fontSize: 30,
-    color: '#fff',
+    fontSize: 35,
     fontFamily: 'inherit',
+    bottom: 35,
+    fontWeight: 'bold',
   },
   gabineteImg: {
     width: 350,
     height: 350,
+    bottom: 35,
   },
   gabineteTxt: {
-    color: '#fff',
     height: 30,
+    bottom: 35,
+  },
+  botaoTxt: {
+    color: 'white',
+    top: 5,
   },
   botao: {
-    backgroundColor: '#191970',
+    backgroundColor: '#008080',
     width: 80,
-    height: 50,
-    borderRadius: 20,
+    height: 35,
+    bottom: 35,
+    borderRadius: 15,
     alignItems: 'center',
-  }
+    marginBottom: 35,
+  },
 })
