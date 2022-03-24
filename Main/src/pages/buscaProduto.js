@@ -1,48 +1,89 @@
 import React from 'react';
 import { View, Appbar, Text, FAB, Surface, Image, Button, ScrollView, TextInput, StyleSheet, AppRegistry } from 'react-native';
-import Icon from 'react-native-vector-icons/Fontisto'
+import Icon from 'react-native-vector-icons/AntDesign'
 import cadeira from '../../assets/img/cadeira.png';
 import processador1 from '../../assets/img/processador1.png';
 import fone from '../../assets/img/fone.png';
 import pc from '../../assets/img/pc.png';
+import controle from '../../assets/img/controle.png';
+import teclado from '../../assets/img/teclado.png';
 
 const App = () => {
   return (
     <ScrollView style={{
-      backgroundColor: '#FFF',
+      backgroundColor: '#b0c4de',
     }}>
       <View>
-        <View style={styles.topo}>
-          <Icon name="arrow-left-l" size={25} color='#FFF' style={{
-            marginLeft: 20,
-            marginTop: 15,
-          }}/>
-          <Icon name="search" size={20} color='#FFF' style={{
-            marginLeft: 65,
-            top: -23          
-          }}/>
+        <View style={{backgroundColor: '#008080'}}>
+          <TextInput style={styles.bar} placeholder="pesquisar">
+            <Icon name="search1" size={20} color='white' style={styles.search}/>
+          </TextInput>
+          <View style={styles.spaceBack}>
+            <Icon name="back" size={25} color='#FFF' style={styles.back}/>
+          </View>
+        </View>
+
+        <View style={styles.gallery}>
+          <View style={styles.image}>
+            <Image source={cadeira} style={styles.imgGallery}/>
+            <Text style={styles.description}> 
+              CADEIRA GAMER PRIZI - JX-1039
+            </Text>
+            <Text style={styles.price}>
+              R$ 779,90
+            </Text> 
+            <Button
+              title="Comprar"
+              color='#008080'
+              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+          </View>
+
+          <View style={styles.image}>
+            <Image source={processador1} style={styles.imgGallery}/>
+            <Text style={styles.description}>
+              PROCESSADOR AMD RYZEN 5 3600 HEXA-CORE 3.6GHZ
+            </Text>
+            <Text style={styles.price}>
+              R$ 1.541,06
+            </Text> 
+            <Button
+              title="Comprar"
+              color='#008080'
+              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+          </View>
         </View>
 
 
+        <View style={styles.gallery}>
+          <View style={styles.image}>
+            <Image source={fone} style={styles.imgGallery}/>
+            <Text style={styles.description}>
+              FONE KINGSTON HYPERX CLOUD REVOLVER S 7.1
+            </Text>
+            <Text style={styles.price}>
+              R$844,00
+            </Text> 
+            <Button
+              title="Comprar"
+              color='#008080'
+              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+          </View>
 
-        <View style={styles.galeria}>
-            <Image source={cadeira} style={styles.imgGaleria}/>
-
-            <Image source={processador1} style={styles.imgGaleria}/>
+          <View style={styles.image}>
+            <Image source={pc} style={styles.imgGallery}/>
+            <Text style={styles.description}>
+              GABINETE GAMER K-MEX BLACK HAWK CG-05QI - RGB ATX PRETO
+            </Text>
+            <Text style={styles.price}>
+              R$309,00
+            </Text> 
+            <Button
+              title="Comprar"
+              color='#008080'
+              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+          </View>
         </View>
-        <Text style={styles.description}> aaaaaa </Text>
-        <Text style={styles.description}> aaaaaa </Text>
-
-        <View style={styles.galeria}>
-            <Image source={fone} style={styles.imgGaleria}/>
-
-            <Image source={pc} style={styles.imgGaleria}/>
-        </View>
-        <Text style={styles.description}> aaaaaa </Text>
-        <Text style={styles.description}> aaaaaa </Text>
-
-
-
+        
         <View style={styles.footer}>
           <Text style={styles.textFooter}> 
             Copyright © 2022 - Todos os direitos reservados a TechForce. 
@@ -57,37 +98,67 @@ export default App;
 
 
 const styles = StyleSheet.create({
-  topo: {
-    backgroundColor: '#4461A2',
-    width: '100%',
-    height: 55,
+  bar: {
+    width: 400,
+    height: 50,
+    backgroundColor: '#008080',
+    left: 7,
   },
-  galeria: {
+  search: {
+    color: '#fff',
+  },
+  spaceBack: {
+    backgroundColor: '#b0c4de',
+    width: 420,
+    height: 40,
+  },
+  back: {
+    backgroundColor: '#008080',
+    width: 30,
+    height: 30,
+    left: 6,
+    borderRadius: 5,
+    top: 10,
+  },
+  gallery: {
     padding: 7,
     justifyContent: 'space-around',
     alignItems: 'center',
     flexDirection: 'row',
     flex: 1,
   },
-  imgGaleria: {
+  image: {
+    padding: 7,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    flex: 1,
+  },
+  imgGallery: {
     width: 155,
     height: 155,
-    backgroundColor: 'blue'
+    backgroundColor: 'rgba(0,0,0,0.2)',
+    borderRadius: 30,
   },
   description: {
     color: '#000',
-    fontSize: 17.5,
-    paddingLeft: '5%',
+    fontSize: 13.5,
+    marginTop: 5
+  },
+  price: {
+    color: '#000',
+    fontSize: 12.5,
+    marginTop: 5,
+    marginBottom: 5,
   },
   footer: {
-    backgroundColor: '#4461A2',
+    backgroundColor: '#008080',
     width: '100%',
-    height: 80,
+    height: 60,
   },
   textFooter: {
     fontSize: 12,
     textAlign: 'center',
     alignItems: 'center',
-    marginTop: 30,
-  }
+    marginTop: 20,
+  },
 })
