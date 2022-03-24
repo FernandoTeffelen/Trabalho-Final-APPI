@@ -1,9 +1,4 @@
-import React from 'react';
 import { StyleSheet } from 'react-native';
-
-export default function Login ({ style }) {
-    
-}
 
 const styles = StyleSheet.create({
   container: {
@@ -32,7 +27,7 @@ const styles = StyleSheet.create({
     width: 300,
     height: 35,
     backgroundColor: '#FFF',
-    borderWidth: 1
+    borderWidth: 1,
   },
   botao: {
     width: 300,
@@ -48,5 +43,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeigth: 'bold',
     color: '#fff',
-  }
-})
+  },
+});
+
+export default styles ;
