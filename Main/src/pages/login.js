@@ -1,82 +1,53 @@
 import React from 'react';
-import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
+import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/AntDesign'
 
-import styles from '../styles/LoginStyle.js';
+import styles from '../styles/LoginStyles.js';
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.facebook}>
+
+      <Text style={styles.techForce}>
         Tech Force
       </Text>
 
+      <Icon name="lock" size={20} color='white' style={styles.lock}/>
+
+      <View style={styles.conta}>
+        <Text style={styles.contaTxt}>Já tem uma conta?</Text>
+        <Text style={styles.contaTxt}>Informe os seus dados para acessá-la.</Text>
+      </View>
+
       <TextInput
         style={styles.input}
-        placeholder="Digite seu email"
+        placeholder="E-mail"
       />
 
       <TextInput
         style={styles.input}
         secureTextEntry={true}
-        placeholder="Digite sua senha"
+        placeholder="Senha"
       />
-      
+
       <TouchableOpacity
         style={styles.botao}
         onPress={ () => { this.props.navigation.navigate('Home') } }
         >
-          <Text style={styles.botaoText}>Login</Text>
+          <Text style={styles.botaoText}>Acessar conta</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+        style={styles.botaoDois}
+        onPress={ () => { this.props.navigation.navigate('Home') } }
+        >
+          <Text style={styles.botaoText}>Cadastre-se</Text>
+      </TouchableOpacity>
+
+      <Text style={styles.senhaTxt}>Esqueci minha senha</Text>
+
     </View>
   );
 }
-export default App;
-<<<<<<< HEAD
-=======
 
-const styles = StyleSheet.create({
-  container: {
-    flex:1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#2f4f4f',
-    width: '100%', 
-    height: '100%',
-  },
-  facebook: {
-    textAlign: 'center',
-    fontSize: 40,
-    color: '#FFF',
-    fontFamily: 'inherit',
-    marginBottom: 40,
-    marginTop: 100
-  },
-  input: {
-    borderColor: '#87CEEB',
-    color: '#B5B5B5',
-    padding: 10,
-    alignItens: 'center',
-    borderRadius: 5,
-    margin: 10,
-    width: 300,
-    height: 35,
-    backgroundColor: '#FFF',
-    borderWidth: 1
-  },
-  botao: {
-    width: 300,
-    height: 50,
-    backgroundColor: '#000892',
-    marginTop: 20,
-    borderRadius: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 160,
-  },
-  botaoText: {
-    fontSize: 16,
-    fontWeigth: 'bold',
-    color: '#fff',
-  }
-})
->>>>>>> 7e51499c297cf3cb02bd344e384b3ef49b93fffe
+export default App;
