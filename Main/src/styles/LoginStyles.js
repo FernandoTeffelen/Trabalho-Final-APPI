@@ -55,7 +55,6 @@ const styles = StyleSheet.create({
     },
     botaoText: {
       fontSize: 16,
-      fontWeigth: 'bold',
       color: '#fff',
     },
     senhaTxt: {
