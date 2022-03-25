@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/AntDesign'
 
 import styles from '../styles/LoginStyles.js';
 
-const App = () => {
+const TelaLogin = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
@@ -32,7 +32,7 @@ const App = () => {
 
       <TouchableOpacity
         style={styles.botao}
-        onPress={ () => { this.props.navigation.navigate('Home') } }
+        onPress={ () => { navigation.navigate('buscaProduto') } }
         >
           <Text style={styles.botaoText}>Acessar conta</Text>
       </TouchableOpacity>
@@ -50,4 +50,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default TelaLogin;

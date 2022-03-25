@@ -10,7 +10,7 @@ import teclado from '../../assets/img/teclado.png';
 
 import styles from '../styles/BProdutoStyles.js';
 
-const App = () => {
+const TelaBuscaProduto = () => {
   return (
     <ScrollView style={{
       backgroundColor: '#b0c4de',
@@ -96,4 +96,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default TelaBuscaProduto;

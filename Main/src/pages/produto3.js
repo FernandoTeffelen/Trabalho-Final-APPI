@@ -6,11 +6,7 @@ import fone from '../../assets/img/fone.png';
 const App = () => {
   return (
     <View style={styles.container}>
-
-      <TextInput style={styles.bar} placeholder="pesquisar">
-        <Icon name="search1" size={20} color='white' style={styles.search}/>
-      </TextInput>
-
+      
       <View style={styles.spaceBack}>
         <Icon name="back" size={25} color='#FFF' style={styles.back} onPress={ () => { alert('voltando') }}/>
       </View>
@@ -73,6 +69,7 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontFamily: 'inherit',
     fontWeight: 'bold',
+    marginTop: 37,
   },
   foneImg: {
     width: 340,

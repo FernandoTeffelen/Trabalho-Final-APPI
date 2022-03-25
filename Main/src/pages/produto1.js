@@ -7,10 +7,6 @@ const App = () => {
   return (
     <View style={styles.container}>
 
-      <TextInput style={styles.bar} placeholder="pesquisar">
-        <Icon name="search1" size={20} color='white' style={styles.search}/>
-      </TextInput>
-
       <View style={styles.spaceBack}>
         <Icon name="back" size={25} color='#FFF' style={styles.back} onPress={ () => { alert('voltando') }}/>
       </View>
@@ -22,7 +18,7 @@ const App = () => {
         <Image style={styles.cadeiraImg} source = {require ('../../assets/img/cadeira.png')}/>
 
         <Text style={styles.cadeiraTxt}>Cadeira gamer gaming racing, preto/azul, com almofadas</Text>
-        <Text style={styles.fcadeiraTxt}><Icon name="barcode" size={20}/>  1200,00 no boleto</Text>
+        <Text style={styles.cadeiraTxt}><Icon name="barcode" size={20}/>  1200,00 no boleto</Text>
         <Text style={styles.cadeiraTxt}><Icon name="creditcard" size={20}/>  1300,00 no cartão em até 10x de R$ 130,00</Text>
         <Text style={styles.cadeiraTxt}>1100,00 no pix</Text>
 
@@ -73,6 +69,7 @@ const styles = StyleSheet.create({
     fontSize: 35,
     fontFamily: 'inherit',
     fontWeight: 'bold',
+    marginTop: 37,
   },
   cadeiraImg: {
     width: 340,
