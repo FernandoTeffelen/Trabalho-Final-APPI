@@ -10,21 +10,13 @@ import teclado from '../../assets/img/teclado.png';
 
 import styles from '../styles/BProdutoStyles.js';
 
-const TelaBuscaProduto = () => {
+const TelaBuscaProduto = ({ navigation }) => {
   return (
     <ScrollView style={{
-      backgroundColor: '#b0c4de',
+      backgroundColor: '#d3d3d3',
     }}>
       <View>
-        <View style={{backgroundColor: '#008080'}}>
-          <TextInput style={styles.bar} placeholder="pesquisar">
-            <Icon name="search1" size={20} color='white' style={styles.search}/>
-          </TextInput>
-          <View style={styles.spaceBack}>
-            <Icon name="back" size={25} color='#FFF' style={styles.back}/>
-          </View>
-        </View>
-
+        
         <View style={styles.gallery}>
           <View style={styles.image}>
             <Image source={cadeira} style={styles.imgGallery}/>
@@ -37,7 +29,7 @@ const TelaBuscaProduto = () => {
             <Button
               title="Comprar"
               color='#008080'
-              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+              onPress={() => { navigation.navigate('produto1')}}/>
           </View>
 
           <View style={styles.image}>
@@ -51,7 +43,7 @@ const TelaBuscaProduto = () => {
             <Button
               title="Comprar"
               color='#008080'
-              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+              onPress={() => { navigation.navigate('produto2')}}/>
           </View>
         </View>
 
@@ -68,7 +60,7 @@ const TelaBuscaProduto = () => {
             <Button
               title="Comprar"
               color='#008080'
-              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+              onPress={() => { navigation.navigate('produto3')}}/>
           </View>
 
           <View style={styles.image}>
@@ -82,7 +74,7 @@ const TelaBuscaProduto = () => {
             <Button
               title="Comprar"
               color='#008080'
-              onPress={() => Alert.alert('Button with adjusted color pressed')}/>
+              onPress={() => { navigation.navigate('produto4')}}/>
           </View>
         </View>
         

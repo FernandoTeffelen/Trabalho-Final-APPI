@@ -4,26 +4,28 @@ const styles = StyleSheet.create({
     container: {
       justiyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#2f4f4f',
       width: '100%', 
       height: '100%',
+      backgroundColor: '#d3d3d3',
     },
     techForce: {
       textAlign: 'center',
       fontSize: 40,
-      color: '#FFF',
+      color: '#000000',
       fontFamily: 'inherit',
-      marginBottom: 40,
+      top: 40,
+      marginBottom: 90,
     },
     lock: {
       bottom: 20,
+      color: '#000000',
     },
     conta: {
       alignItems: 'center',
       bottom: 10,
     },
     contaTxt: {
-      color: '#FFF',
+      color: '#000000',
     },
     input: {
       borderColor: '#87CEEB',
@@ -59,6 +61,7 @@ const styles = StyleSheet.create({
     },
     senhaTxt: {
       top: 100,
+      color: '#000000',
     },
   });
 

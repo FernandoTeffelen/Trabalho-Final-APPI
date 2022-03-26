@@ -10,7 +10,6 @@ const TelaProduto1 = () => {
     <View style={styles.container}>
 
       <View style={styles.spaceBack}>
-        <Icon name="back" size={25} color='#FFF' style={styles.back} onPress={ () => { alert('voltando') }}/>
       </View>
 
         <Text style={styles.titulo}>

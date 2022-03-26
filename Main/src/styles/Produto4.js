@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#2f4f4f',
       width: 91,
       height: 40,
-      borderRadius: 15,
+      borderRadius: 5,
       alignItems: 'center',
     },
     footer: {

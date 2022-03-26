@@ -5,12 +5,11 @@ import processador1 from '../../assets/img/processador1.png';
 
 import styles from '../styles/Produto2.js';
 
-const App = () => {
+const TelaProduto2 = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
       <View style={styles.spaceBack}>
-        <Icon name="back" size={25} color='#FFF' style={styles.back} onPress={ () => { alert('voltando') }}/>
       </View>
 
         <Text style={styles.titulo}>
@@ -37,4 +36,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default TelaProduto2;

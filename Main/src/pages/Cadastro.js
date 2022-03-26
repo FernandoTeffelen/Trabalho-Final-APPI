@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/AntDesign'
 
 import styles from '../styles/LoginStyles.js';
 
-const TelaLogin = ({ navigation }) => {
+const TelaCadastro = ({ navigation }) => {
   return (
     <View style={styles.container}>
 
@@ -12,11 +12,10 @@ const TelaLogin = ({ navigation }) => {
         Tech Force
       </Text>
 
-      <Icon name="lock" size={20} color='white' style={styles.lock}/>
+      <Icon name="adduser" size={20} color='white' style={styles.lock}/>
 
       <View style={styles.conta}>
-        <Text style={styles.contaTxt}>Já tem uma conta?</Text>
-        <Text style={styles.contaTxt}>Informe os seus dados para acessá-la.</Text>
+        <Text style={styles.contaTxt}>Informe os dados abaixo para criar sua conta</Text>
       </View>
 
       <TextInput
@@ -30,27 +29,27 @@ const TelaLogin = ({ navigation }) => {
         placeholder="Senha"
       />
 
-      <TouchableOpacity
-        style={styles.botao}
-        onPress={ () => { navigation.navigate('buscaProduto') } }
-        >
-          <Text style={styles.botaoText}>Acessar conta</Text>
-      </TouchableOpacity>
+        <TextInput
+        style={styles.input}
+        secureTextEntry={true}
+        placeholder="Nome"
+      />
+
+        <TextInput
+        style={styles.input}
+        secureTextEntry={true}
+        placeholder="Sobrenome"
+      />
 
       <TouchableOpacity
         style={styles.botaoDois}
-        onPress={ () => { navigation.navigate('Cadastro') } }
+        onPress={ () => { navigation.navigate('Login') } }
         >
           <Text style={styles.botaoText}>Cadastre-se</Text>
       </TouchableOpacity>
-
-      <Text
-      style={styles.senhaTxt}
-      onPress={ () => { navigation.navigate('RecuperarSenha') } }
-      >Esqueci minha senha</Text>
 
     </View>
   );
 }
 
-export default TelaLogin;
+export default TelaCadastro;
