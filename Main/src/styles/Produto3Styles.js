@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
       borderRadius: 100,
     },
     search: {
-      color: '#ffffff',
+      color: '#fff',
     },
     spaceBack: {
       width: 420,
@@ -40,10 +40,10 @@ const styles = StyleSheet.create({
     },
     foneTxt: {
       height: 30,
-      color: '#000000',
+      color: '#000',
     },
     botaoTxt: {
-      color: '#ffffff',
+      color: '#fff',
       top: 7,
     },
     botao: {
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     textFooter: {
       fontSize: 12,
       textAlign: 'center',
-      color: '#ffffff',
+      color: '#fff',
     }
   });
 

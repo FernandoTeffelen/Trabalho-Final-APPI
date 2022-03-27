@@ -25,7 +25,7 @@ const TelaRecSenha = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.botaoDois}
-        onPress={ () => { navigation.navigate('AlterarSenha') } }
+        onPress={ () => { navigation.navigate('alterarSenha') } }
         >
           <Text style={styles.botaoText}>Alterar senha</Text>
       </TouchableOpacity>

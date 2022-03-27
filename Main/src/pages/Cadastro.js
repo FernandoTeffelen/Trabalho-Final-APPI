@@ -15,8 +15,18 @@ const TelaCadastro = ({ navigation }) => {
       <Icon name="adduser" size={20} color='white' style={styles.lock}/>
 
       <View style={styles.conta}>
-        <Text style={styles.contaTxt}>Informe os dados abaixo para criar sua conta</Text>
+        <Text style={styles.contaTxt}>Informe os dados abaixo para criar sua conta:</Text>
       </View>
+
+      <TextInput
+        style={styles.input}
+        placeholder="Nome"
+      />
+
+      <TextInput
+        style={styles.input}
+        placeholder="Sobrenome"
+      />
 
       <TextInput
         style={styles.input}
@@ -29,21 +39,8 @@ const TelaCadastro = ({ navigation }) => {
         placeholder="Senha"
       />
 
-        <TextInput
-        style={styles.input}
-        secureTextEntry={true}
-        placeholder="Nome"
-      />
-
-        <TextInput
-        style={styles.input}
-        secureTextEntry={true}
-        placeholder="Sobrenome"
-      />
-
       <TouchableOpacity
-        style={styles.botaoDois}
-        onPress={ () => { navigation.navigate('Login') } }
+        style={styles.botaoDois} onPress={ () => { navigation.navigate('login') } }
         >
           <Text style={styles.botaoText}>Cadastre-se</Text>
       </TouchableOpacity>

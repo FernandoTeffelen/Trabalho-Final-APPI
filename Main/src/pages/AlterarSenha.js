@@ -31,7 +31,7 @@ const TelaAltSenha = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.botao}
-        onPress={ () => { navigation.navigate('Login') } }
+        onPress={ () => { navigation.navigate('login') } }
         >
           <Text style={styles.botaoText}>Voltar para Login</Text>
       </TouchableOpacity>

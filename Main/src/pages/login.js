@@ -39,14 +39,14 @@ const TelaLogin = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.botaoDois}
-        onPress={ () => { navigation.navigate('Cadastro') } }
+        onPress={ () => { navigation.navigate('cadastro') } }
         >
           <Text style={styles.botaoText}>Cadastre-se</Text>
       </TouchableOpacity>
 
       <Text
       style={styles.senhaTxt}
-      onPress={ () => { navigation.navigate('RecuperarSenha') } }
+      onPress={ () => { navigation.navigate('recuperarSenha') } }
       >Esqueci minha senha</Text>
 
     </View>

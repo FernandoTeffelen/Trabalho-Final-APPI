@@ -3,7 +3,7 @@ import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity, Scro
 import Icon from 'react-native-vector-icons/AntDesign'
 import fone from '../../assets/img/fone.png'; 
 
-import styles from '../styles/Produto3.js';
+import styles from '../styles/Produto3Styles.js';
 
 const TelaProduto3 = ({ navigation }) => {
   return (

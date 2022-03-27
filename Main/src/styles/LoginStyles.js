@@ -11,21 +11,22 @@ const styles = StyleSheet.create({
     techForce: {
       textAlign: 'center',
       fontSize: 40,
-      color: '#000000',
+      color: '#000',
       fontFamily: 'inherit',
       top: 40,
       marginBottom: 90,
     },
     lock: {
       bottom: 20,
-      color: '#000000',
+      color: '#000',
     },
     conta: {
       alignItems: 'center',
-      bottom: 10,
+      bottom: 15,
     },
     contaTxt: {
-      color: '#000000',
+      color: '#000',
+      fontSize: 16
     },
     input: {
       borderColor: '#87CEEB',
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
     },
     senhaTxt: {
       top: 100,
-      color: '#000000',
+      color: '#000',
     },
   });
 

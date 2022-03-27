@@ -1,9 +1,9 @@
 import React from 'react';
 import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity, ScrollView } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign'
-import processador1 from '../../assets/img/processador1.png'; 
+import processador1 from '../../assets/img/processador.png'; 
 
-import styles from '../styles/Produto2.js';
+import styles from '../styles/Produto2Styles.js';
 
 const TelaProduto2 = ({ navigation }) => {
   return (
@@ -16,7 +16,7 @@ const TelaProduto2 = ({ navigation }) => {
           Tech Force
         </Text>
 
-        <Image style={styles.processadorImg} source = {require ('../../assets/img/processador1.png')}/>
+        <Image style={styles.processadorImg} source = {require ('../../assets/img/processador.png')}/>
 
         <Text style={styles.processadorTxt}>Processador AMD RYZEN 5 3600, 6-CORE</Text>
         <Text style={styles.processadorTxt}><Icon name="barcode" size={20}/>  1200,00 no boleto</Text>

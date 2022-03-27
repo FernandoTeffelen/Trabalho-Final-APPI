@@ -3,7 +3,7 @@ import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity, Scro
 import Icon from 'react-native-vector-icons/AntDesign'
 import pc from '../../assets/img/pc.png'; 
 
-import styles from '../styles/Produto4.js';
+import styles from '../styles/Produto4Styles.js';
 
 const TelaProduto4 = ({ navigation }) => {
   return (

@@ -2,11 +2,9 @@ import React from 'react';
 import { View, Appbar, Text, FAB, Surface, Image, Button, ScrollView, TextInput, StyleSheet, AppRegistry } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign'
 import cadeira from '../../assets/img/cadeira.png';
-import processador1 from '../../assets/img/processador1.png';
+import processador1 from '../../assets/img/processador.png';
 import fone from '../../assets/img/fone.png';
 import pc from '../../assets/img/pc.png';
-import controle from '../../assets/img/controle.png';
-import teclado from '../../assets/img/teclado.png';
 
 import styles from '../styles/BProdutoStyles.js';
 

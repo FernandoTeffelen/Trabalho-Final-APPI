@@ -3,7 +3,7 @@ import { Alert, Text, StyleSheet, View, Image, TextInput, TouchableOpacity, Scro
 import Icon from 'react-native-vector-icons/AntDesign'
 import cadeira from '../../assets/img/cadeira.png'; 
 
-import styles from '../styles/Produto1.js';
+import styles from '../styles/Produto1Styles.js';
 
 const TelaProduto1 = () => {
   return (
