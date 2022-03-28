@@ -19,7 +19,7 @@ const TelaBuscaProduto = ({ navigation }) => {
           <View style={styles.image}>
             <Image source={cadeira} style={styles.imgGallery}/>
             <Text style={styles.description}> 
-              CADEIRA GAMER PRIZI - JX-1039
+              CADEIRA GAMER PRIZI
             </Text>
             <Text style={styles.price}>
               R$ 779,90
@@ -64,7 +64,7 @@ const TelaBuscaProduto = ({ navigation }) => {
           <View style={styles.image}>
             <Image source={pc} style={styles.imgGallery}/>
             <Text style={styles.description}>
-              GABINETE GAMER K-MEX BLACK HAWK CG-05QI - RGB ATX PRETO
+              GABINETE GAMER K-MEX BLACK HAWK CG-05QI - RGB
             </Text>
             <Text style={styles.price}>
               R$309,00

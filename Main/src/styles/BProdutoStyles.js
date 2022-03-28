@@ -56,13 +56,13 @@ const styles = StyleSheet.create({
     footer: {
       backgroundColor: '#008080',
       width: '100%',
-      height: 60,
+      height: 40,
     },
     textFooter: {
       fontSize: 12,
       textAlign: 'center',
       alignItems: 'center',
-      marginTop: 20,
+      marginTop: 11,
     },
   });
 
